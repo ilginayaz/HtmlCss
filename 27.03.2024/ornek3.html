@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilgin2</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>A</td> <td>C</td>
+        </tr>
+        <tr>
+            <td>B</td> <td>D</td>
+        </tr>
+        <tr>
+            <td colspan="2"; align="center">E</td>
+                  
+        </tr>    
+    </table>
+    <br>
+
+    <table border="2">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td rowspan="2">C</td>
+
+        </tr>
+
+    </table>
+
+    <br>
+    <table border="2">
+        <tr>
+            <td>A</td> <td>B</td> <td>C</td>
+        </tr>
+        <tr>
+            <td rowspan="2">D</td> <td>E</td> <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td> <td>I</td> 
+        </tr>
+    </table>
+    <br>
+    <table border="2">
+        <tr>
+            <td colspan="2"; align="center">AD/SOYAD</td><td>PUAN</td>
+        </tr>
+        <tr>
+            <td>DAVID</td><td>ROBINSON</td><td>50</td>
+        </tr>
+        <tr>
+            <td>TONY</td><td>PARKER</td><td>89</td>
+        </tr>
+        <tr>
+            <td>RAY</td><td>ALLEN</td><td>55</td>
+        </tr>
+    </table>
+    <br>
+    <table border="">
+            <tr>
+                <td colspan="2"; align="center">AD/SOYAD</td><td>SINIF</td><td>OKUL</td>
+            </tr>
+            <tr>
+                <td rowspan="2">ALİ</td><td rowspan="2">KARA</td><td>7</td><td rowspan="2">OKUL A</td>
+            </tr>
+            <tr>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td rowspan="2">AYŞE</td><td rowspan="2">YILDIZ</td><td>8</td><td rowspan="2">OKUL B</td>
+            </tr>
+            <tr>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td rowspan="2">SUNA</td><td rowspan="2">YILMAZ</td><td>10</td><td rowspan="2">OKUL C</td>
+            </tr>
+            <tr>
+                <td>A</td>
+            </tr>
+    </table>
+    <br>
+    <table border="2">
+        <tr>
+            <td>A</td><td>B</td><td>C</td><td>D</td>
+        </tr>
+        <tr>
+            <td>E</td><td rowspan="2"; colspan="2"; align="CENTER">F</td><td>G</td>
+        </tr>
+        <tr>
+            <td>H</td><td>I</td>
+        </tr>
+        <tr>
+            <td>J</td><td>K</td><td>L</td><td>M</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+<br>
+<hr>
+<br>
+<fieldset style="width: 4px;" >
+    <legend>
+        Bilgiler:
+    </legend>
+    <p>Ad:</p>
+    <input type="text" />
+    <p>Soyad:</p>
+    <input type="text" />
+    <br>
+    <br>
+    <p><input type="button" value="Kayıt Ol" /></p>
+
+</fieldset>
+
+<br>
+<hr>
+<div class="mb-3">
+    <label for="" class="form-label">Password:</label>
+    <br>
+    <br>
+    <input
+        type="password"
+        class="form-control"
+        name=""
+        id=""
+        placeholder="gizli sifre"
+    />
+</div>
+
+<br>
+<p>Renk Seçiniz:</p>
+<input type="color"; style="width: 180px;" />
+<br>
+<p>Tarih Seçiniz:</p>
+<input type="date"; style="width: 180px;">
+<br>
+<p>Dosya Seçiniz:</p>
+<input type="file">
+<br>
+<p>Sayı:</p>
+<input type="number" name="" id="">
+<br>
+<p>Sayı:</p>
+<input type="number" min="10"; max="100"; step="10"; style="width: 180px;">
+<br>
+<p>Hafta Seçin:</p>
+<input type="week" name="hafta" id="" style="width: 180px;">
+<br>
+<p>Zaman:</p>
+<input type="time" name="" id="">
+
+<hr>
+<br>
+
+<fieldset style="width: 400px; height: 600px;" >
+    <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+    Ad:
+    <input type="text" style="width: 130px;" />
+    Soyad:
+    <input type="text" style="width: 130px;" />
+    <br>
+    <br>
+    Email:
+    <input type="text" style="width: 100px;"/>
+    Doğum Tarihi:
+    <input type="date" style="width: 100px;" />
+    <br>
+    <br>
+    Adres:
+    <input type="text" style="width: 120px;" />
+    Telefon:
+    <input type="text" style="width: 120px;" />
+    <br>
+    <br>
+    <td><label for="cinsiyetE">Cinsiyet:</label>
+                    
+                        <label for="cinsiyetE"> Erkek </label>
+                        <input type="radio" name="cinsiyet" id="cinsiyetE" value="E" checked />
+                        <label for="cinsiyetK">Kadın</label>
+                        <input type="radio" name="cinsiyet" id="cinsiyetK"value="K" />
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Diğer Bilgiler</legend>
+    <table>
+        <tr>
+            <td rowspan="">Eğitim Bilgileri:</td>
+            <td><textarea name="" id="" cols="29" rows="4"></textarea></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td rowspan="">İş Deneyimi: </td>
+            <td><textarea name="" id="" cols="29" rows="4"></textarea></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td rowspan="">Yabancı Diller: </td>
+            <td><textarea name="" id="" cols="29" rows="4"></textarea></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td rowspan="">Yetenekler: </td>
+            <td><textarea name="" id="" cols="29" rows="4"></textarea></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td rowspan="">Sertifikalar: </td>
+            <td><textarea name="" id="" cols="29" rows="4"></textarea></td>
+        </tr>
+    </table>
+    
+    <br>
+    
+    
+    </fieldset>
+    
+    
+
+    <br>
+    <br>
+    <p><input type="button" value="Başvur" /></p>
+
+</fieldset>
+
+
+</body>
+</html>

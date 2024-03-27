@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            color:red; font-weight: bold; font-size: x-large;
+        }
+
+        .etiketBlack{
+            color:black;font-size: 16px; font-weight: normal;
+        }
+
+        #etiket1{
+            color:rgb(56, 177, 130);font-size: 16px; font-weight: normal;
+        }
+
+        /* table{
+            border: 1px solid black;
+            background-color: burlywood;
+        }
+
+        td{
+            background-color: aqua;
+        } */
+
+        table#tablo{
+            background-color: aqua;
+            border: 5px solid rebeccapurple;
+        }
+
+        table#tablo table{
+            background-color: aqua;
+            border: 3px solid rgb(119, 113, 24);
+        }
+        
+        div#container{
+            border:5px solid cadetblue;
+            background-color: cornflowerblue;
+            width: 400px;
+            height: 300px;
+        }
+
+        div#container p{
+            color:antiquewhite;
+            font-size: 18px;
+        }
+
+        div#container > p{
+            border:1px solid black;
+        }
+
+        div#container > div#firstChild > p{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div id="firstChild">
+            <p>test</p>
+            <div id="firstChildFirstChild">
+                <p>test</p>
+            </div>
+
+            <p>test</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <br>
+    <form action="http://localhost/form/kayit.php" method="post">
+        <table id="tablo">
+            <tbody>
+                <tr>
+                    <td><label for="adi">Adı</label></td>
+                    <td><input type="text" name="adi" id="adi"/></td>
+                </tr>
+                <tr>
+                    <td><label for="soyadi">Soyadı</label></td>
+                    <td><input type="text" name="soyadi" id="soyadi" /></td>
+                </tr>
+                <tr>
+                    <td><label for="dtarihi">Doğum Tarihi</label</td>
+                    <td><input type="date" name="dtarihi" id="dtarihi" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cinsiyetE">Cinsiyet</label></td>
+                    <td>
+                        <label for="cinsiyetE" style="color:black;font-size: 16px; font-weight: normal;">Erkek </label>
+                        <input type="radio" name="cinsiyet" id="cinsiyetE" value="E" checked />
+                        <label for="cinsiyetK" class="etiketBlack" id="etiket1" style="color:black;font-size: 16px; font-weight: normal;">Kadın</label>
+                        <input type="radio" name="cinsiyet" id="cinsiyetK"value="K" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cinsiyetE">Dersler</label></td>
+                    <td>
+                        <table style="background-color: azure;">
+                            <tr>
+                                <td><label for="dersMatematik"
+                                    class="etiketBlack">Matematik</label></td>
+                                <td><input type="checkbox" name="dersler[]" id="dersMatematik" value="matematik"> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="dersFizik" class="etiketBlack">Fizik</label></td>
+                                <td><input type="checkbox" name="dersler[]" id="dersFizik" value="fizik"> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="dersKimya" class="etiketBlack">Kimya</label></td>
+                                <td><input type="checkbox" name="dersler[]" id="dersKimya" value="kimya"> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="dersAstronomi" class="etiketBlack">Astronomi</label></td>
+                                <td><input type="checkbox" name="dersler[]" id="dersAstronomi" value="astronomi"> </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Kaydet" />
+                        <input type="reset" value="Temizle" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
