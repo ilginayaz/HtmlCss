@@ -1,0 +1,40 @@
+h2 {background-color: aqua; font-style: italic;}
+div#bir{background-color: blueviolet; color: beige;}
+
+div{border-style: dotted;}
+h3{text-align: right;}
+div#iki{margin: 50px;}
+div#uc{padding: 50px;}
+
+div > p{
+    background-color: rgb(141, 136, 161);
+} 
+
+div section p {
+    background-color: blueviolet;
+} 
+
+div+p{background-color: rgb(125, 193, 238);}
+a[target]{
+ background-color: brown;
+}
+div.sonuc{
+    background-color: aquamarine;
+}
+
+
+/*iceren*/
+/*div[class*=de]{
+    background-color: blueviolet;
+}
+
+/*baslayan*/
+div[class^=de]{
+    background-color: rgb(124, 189, 138);
+}
+
+/*biten*/
+[class$=de]{
+    background-color: rgb(240, 233, 138);
+}
+

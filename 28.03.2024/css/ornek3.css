@@ -1,0 +1,49 @@
+p{
+    color: black;
+    text-indent: 50px;
+    letter-spacing: 5px;
+    line-height: 25px;
+    /* text-decoration: overline underline line-through; */
+    text-transform: uppercase;
+    word-spacing: 10px;
+    text-shadow: 3px -3px 5px red;
+}
+
+/* div{
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 3px -3px 5px blueviolet;
+    background: linear-gradient(90deg,blue,yellow,red);
+} */
+
+p:first-child{
+    background-color: red;
+    width: 100px;
+    height: 200px;
+}
+
+.box{
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.box:hover{
+    height: 200px;
+}
+
+a:hover{
+    background-color: aqua;
+    letter-spacing: 15px;
+    cursor: crosshair;
+}
+
+a:hover::before{
+    content:"<< "
+}
+
+a::after{
+    content:" >>"
+}

@@ -1,0 +1,20 @@
+div#ucgenler{
+    width: 0;
+    height: 0;
+    padding: 0;
+    border-radius: 0;
+
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom:100px solid transparent;
+    border-top:100px solid;
+
+    border-top-color: blue;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /* border-bottom-color: red; */
+    /* border-left-color:yellow;
+    border-right-color: aquamarine; */
+    
+    
+}
