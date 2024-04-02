@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* div{
+            height: 30px;
+            background-color: red;
+            color: beige;
+            font-size: xx-large;
+        } */
+    </style>
+</head>
+<body>
+   
+    
+    <!-- <label>Sayı 1: </label><input type="text" id="txtSayi1"> 
+    <label>Sayı 2: </label><input type="text" id="txtSayi2">
+    <button onclick="Bul()">Karşılaştır</button>
+   
+   <script>
+        function Bul()
+        {
+            let sayi1 = document.getElementById("txtSayi1").value;
+            sayi1 = Number(sayi1);
+            let sayi2 = document.getElementById("txtSayi2").value;
+            sayi2 = Number(sayi2);
+
+            if (sayi1>sayi2)
+            console.log("büyük olan sayı sayı 1: " + sayi1);
+            else if (sayi2>sayi1)
+            console.log("büyük olan sayı sayı 2: " + sayi2);
+            else
+            console.log("iki sayı esit");
+        }
+
+    </script> 
+   -->
+
+
+
+   <!-- 
+    <script>
+
+        
+        let sayi = 8;
+        let gun = "Sali";
+        let tatilGunu1 = "Cumartesi";
+        let tatilGunu2 = "Pazar";
+        console.log(gun);
+        let tatilGunleri = tatilGunu1 + " " + tatilGunu2;
+        let z = gun + sayi;
+        console.log(z);
+        console.log(tatilGunleri);
+        console.log(8+5);
+        console.log(8 + "5");
+        console.log(8 + "5" + 7 * ("5" + 2));
+        console.log(8 + 5 + 7 * "5" + 2 + "77" + 22);
+        console.log(8 - "5");
+        console.log("8" - "5");
+        console.log(8 * "5");
+        
+        
+
+
+
+        /*
+        let a = 42;
+        let b = 98;
+
+        if (a>b)
+            console.log("büyük olan sayı a: " + a);
+        else if (b>a)
+            console.log("büyük olan sayı b: " + b);
+        else
+            console.log("iki sayı esit");
+
+        */ 
+
+    </script>
+
+     -->
+
+
+    
+
+
+    <div id="divX"></div>
+    <div id="divY"></div>
+    <button onclick="RenkAta()">Değiştir</button>
+    <script>
+
+    /*window.onmousemove=function(fare){
+        document.getElementById("divX").innerHTML=fare.clientX;
+        document.getElementById("divY").innerHTML=fare.clientY;
+    }
+    */
+
+   
+
+    function RenkAta(){
+        let renkler = ["red", "green", "blue", "yellow", "pink"];
+    let rastgeleIndis = Math.floor(Math.random()*5);
+    document.body.style.backgroundColor = renkler[rastgeleIndis];
+
+    }
+
+   
+
+
+    
+
+
+
+</script>
+</body>
+</html>
