@@ -99,7 +99,7 @@
     */
 
    
-
+/*
     function RenkAta(){
         let renkler = ["red", "green", "blue", "yellow", "pink"];
     let rastgeleIndis = Math.floor(Math.random()*5);
@@ -107,7 +107,19 @@
 
     }
 
-   
+   */
+
+   let renkler = ["red", "green", "blue", "yellow", "pink"];
+   let rastgeleIndis;
+   let r1, r2, r3;
+
+   function RenkAta(){
+    r1=Math.floor(Math.random() * 256);
+    r2=Math.floor(Math.random() * 256);
+    r3=Math.floor(Math.random() * 256);
+    document.body.style.backgroundColor = "rgb("+r1+","+r2+","+r3+")";
+
+   }
 
 
     
