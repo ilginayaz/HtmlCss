@@ -1,0 +1,33 @@
+#bir{
+
+ text-shadow: 5px -3px 5px rgb(85, 105, 10);
+}
+#iki{
+    border-style: solid;
+    box-shadow: 5px -3px 5px rgb(3, 71, 71);
+}
+
+
+#uc{
+    column-count: 3;
+}
+
+#dort{
+    column-count: 3;
+    column-rule-style: dotted;
+    column-rule-color: rgb(3, 71, 71);
+}
+#bes{
+    background-image: url(/01.04.2024/img/resim.jpg);
+    background-size: 150px;
+    color: rgb(196, 27, 27);
+    font-size: 20px;
+    font-weight: bold;    
+}
+#besbir{
+    background-image: url(/01.04.2024/img/resim.jpg), url(/01.04.2024/img/sunflower.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    background-size: 300px;
+    font-size: 30px;
+}

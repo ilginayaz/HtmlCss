@@ -1,0 +1,20 @@
+
+.satranc{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 40px;
+    text-align: center;
+}
+td{
+    width: 100px;
+    height: 70px;
+    
+}
+ 
+.beyaz{
+    background-color: rgb(253, 253, 253);
+
+}
+.siyah{
+    background-color: rgb(233, 169, 193);  
+}
