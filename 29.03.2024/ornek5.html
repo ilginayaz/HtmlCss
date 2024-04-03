@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        button{
+            border: 2px solid black;
+            padding: 5px;
+            width: 100px;
+            color: black;
+            background-color: white;
+        }
+
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="console.info('Merhaba Dünya')">Selamlar</button>
+    <button onclick="Hi()">Selamlar</button>
+    <button onclick="changeInput()">Input Change</button>
+    <input type="text" id="ad" />
+
+    <script type="text/javascript">
+
+        //alert("TEst");
+        document.getElementById("ad").value = "Kazım";
+        document.getElementById("ad").style.color = "red";
+        document.getElementById("ad").style.backgroundColor = "black";
+
+        function Hi(){
+            alert("Merhaba Javascript");
+            console.log("Bu bir log");
+        }
+
+        function changeInput(){
+            document.getElementById("ad").value = "Göksel";
+        document.getElementById("ad").style.color = "red";
+        document.getElementById("ad").style.backgroundColor = "black";
+        }
+    </script>
+</body>
+</html>

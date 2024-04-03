@@ -1,0 +1,95 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap'); */
+/* @import url('../fonts/Fasthand-Regular.ttf'); */
+
+@font-face{
+    font-family: FasthandRegular;
+    src:url('../fonts/Fasthand-Regular.ttf');
+}
+
+@keyframes soldanSaga {
+    /* from{
+        background-color: black;
+        color: white;
+    }
+
+    to{
+        background-color: white;
+        color:black;
+    } */
+
+    0%{
+        background-color: black;
+        color: white;
+        width: 1%;
+        border-radius: 50%;
+        /* transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); */
+        transform: rotate3d(1, 1, 1, 45deg);
+    }
+
+    50%{
+        background-color: white;
+        color:black;
+        width: 50%;
+        border-radius: 0%;
+        /* transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg); */
+        transform: rotate3d(1, -1, 1, 90deg);
+    }
+
+    100%{
+        background-color: black;
+        color: white;
+        width: 100%;
+        border-radius: 50%;
+        /* transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); */
+        transform: rotate3d(1, 1, -1, 180deg);
+    }
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    top:0;
+    left:0;
+    transition: width 2s linear, height 2s linear, background-color 2s linear, top 2s linear, left 2s linear;
+
+    /* transition-property: width;
+    transition-duration: 2.75s;
+    transition-timing-function: cubic-bezier();
+    transition-delay: 0s; */
+}
+
+.box:hover{
+    width: 300px;
+    height: 300px;
+    background-color:yellow;
+    top:10px;
+    left:10px;
+}
+
+.content{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.content > p {
+    font-size: 32px;
+    font-family: FasthandRegular;
+    background-color: black;
+    color: white;
+}
+
+.contentAnimation{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    animation-name: soldanSaga;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
