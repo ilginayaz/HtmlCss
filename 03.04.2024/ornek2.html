@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ornek2</title>
+</head>
+<body>
+    <script src="ornek2.js"></script>
+
+    <label>Aratılacak kelime: </label> <input type="text" id="txtAranan">
+    <button onclick="Bul()">Ara</button>
+
+    <p id="yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur laudantium aperiam nesciunt labore mollitia placeat odit soluta, molestiae, dicta impedit quo perspiciatis neque ab nostrum natus ipsa nam sed!</p>
+
+    <script>
+        function Bul()
+        {
+        let adet = 0;
+        let metin = document.getElementById("yazi").innerHTML;
+        let aranan = document.getElementById("txtAranan").value;
+        let konum;
+        while(true)
+        {
+            konum=metin.indexOf(aranan);
+            if(konum == -1){
+                break;
+
+            }
+            adet++;
+
+            metin = metin.substring(konum+aranan.length);
+        }
+        if(adet==0){
+            alert("bulunamadı");
+        }
+        else{
+            alert(adet + "kere bulunmuştur")
+        }
+        }
+    </script>
+    
+</body>
+</html>
