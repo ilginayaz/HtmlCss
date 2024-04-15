@@ -1,0 +1,14 @@
+.mt-6 {
+    margin-top: 5rem !important;
+}
+
+.hide{
+    /* display: none; */
+    opacity: 0 !important; 
+    transition: opacity 3s linear;
+}
+
+.show{
+    /* display: block; */
+    opacity: 1 !important;
+}
